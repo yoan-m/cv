@@ -1,4 +1,4 @@
-import 'package:cv/page.dart';
+import 'package:cv/splitview.dart';
 import 'package:cv/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Yoan MURCIANO',
       theme: theme,
-      home: PageWidget(),
+      home: SplitView(),
     );
   }
 }

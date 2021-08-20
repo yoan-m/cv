@@ -5,7 +5,6 @@ import 'package:cv/components/drawer-language.dart';
 import 'package:cv/components/drawer-rate.dart';
 import 'package:cv/components/drawer-subtitle.dart';
 import 'package:cv/components/drawer-title.dart';
-import 'package:cv/components/rating-widget.dart';
 import 'package:flutter/material.dart';
 
 class DrawerWidget extends StatelessWidget {

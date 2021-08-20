@@ -25,7 +25,7 @@ class PageExperienceWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return FixedTimeline.tileBuilder(
       theme: TimelineThemeData(
-          nodePosition: 0.07, connectorTheme: ConnectorThemeData(space: 51)),
+          nodePosition: 0.1, connectorTheme: ConnectorThemeData(space: 51)),
       builder: TimelineTileBuilder.connectedFromStyle(
         contentsAlign: ContentsAlign.basic,
         oppositeContentsBuilder: (context, index) => Container(

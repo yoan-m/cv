@@ -1,4 +1,3 @@
-import 'package:cv/components/rating-widget.dart';
 import 'package:flutter/material.dart';
 
 class DrawerDiplomaWidget extends StatelessWidget {
