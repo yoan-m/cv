@@ -79,6 +79,16 @@ class PageWidget extends StatelessWidget {
                       'AngularJS, Java, Spring Boot, OpenLayers, GraphHopper',
                 ),
                 PageExperienceWidget(
+                  dateDebut: 'Juin 2018',
+                  dateFin: 'Mars 2019',
+                  title: 'Explosimètre',
+                  entreprise: 'SDIS45',
+                  subtitle:
+                      'Réalisation d\'un simulateur d\'explosimètre télécommandé.',
+                  technos: 'Arduino, C++',
+                  perso: true,
+                ),
+                PageExperienceWidget(
                   dateDebut: 'Septembre 2016',
                   dateFin: 'Mars 2017',
                   title: 'CIS Booster',
@@ -144,12 +154,32 @@ class PageWidget extends StatelessWidget {
                 ),
                 PageExperienceWidget(
                   dateDebut: 'Janvier 2009',
+                  dateFin: 'Décembre 2009',
+                  title: 'DiploDocus',
+                  entreprise: 'SDIS45',
+                  subtitle:
+                      'Développement d\'un outil de gestion des formations, validation des UV et génération de diplômes',
+                  technos: 'PHP, MySQL, jQuery',
+                  perso: true,
+                ),
+                PageExperienceWidget(
+                  dateDebut: 'Janvier 2009',
                   dateFin: 'Mars 2010',
                   title: 'Alternance',
                   entreprise: 'Apogéa',
                   subtitle:
                       'Maintenance et développement d\'un outil de plannification interne.',
                   technos: 'VB.Net, SQL Server, WinDev',
+                ),
+                PageExperienceWidget(
+                  dateDebut: 'Janvier 2008',
+                  dateFin: 'Décembre 2008',
+                  title: 'UGLY',
+                  entreprise: 'SDIS45',
+                  subtitle:
+                      'Développement d\'un outil de géolocalisation & déclenchement de reporters photo / vidéo pour l\'unité de reportages du SDIS45.',
+                  technos: 'Google Maps API, PHP, WordPress, MySQL, jQuery',
+                  perso: true,
                 ),
                 PageExperienceWidget(
                   dateDebut: 'Juillet 2008',
@@ -166,7 +196,7 @@ class PageWidget extends StatelessWidget {
                   title: 'Alternance',
                   entreprise: 'Atos Origin Intégration',
                   subtitle:
-                      'Développement d\'un outil de contrale qualité pour Renault.',
+                      'Développement d\'un outil de contrôle qualité pour Renault.',
                   technos: 'VB.Net',
                 ),
                 PageExperienceWidget(
@@ -204,7 +234,10 @@ class PageWidget extends StatelessWidget {
                         icon: Icons.local_fire_department),
                     PageHobbyWidget(
                         title: 'Electronique', icon: Icons.bug_report),
-                    PageHobbyWidget(title: 'Voyages', icon: Icons.explore)
+                    PageHobbyWidget(title: 'Voyages', icon: Icons.explore),
+                    PageHobbyWidget(
+                        title: 'Maraîchage', icon: Icons.emoji_nature),
+                    PageHobbyWidget(title: 'DIY', icon: Icons.design_services)
                   ],
                 ),
                 PageSpacerWidget(),

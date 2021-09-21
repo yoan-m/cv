@@ -12,7 +12,7 @@ class DrawerAgeWidget extends StatelessWidget {
     var now = new DateTime.now();
     Duration difference = now.difference(bday);
     return DrawerIconWidget(
-      icon: Icons.event,
+      icon: Icons.cake,
       title: (difference.inDays / 365).floor().toString() + ' ans',
     );
   }

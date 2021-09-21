@@ -11,7 +11,7 @@ class RatingWidget extends StatelessWidget {
     return Row(
       children: [
         Expanded(child: Text(this.label)),
-        this.rate <= 1 ? EmptyDotWidget() : FullDotWidget(),
+        this.rate < 1 ? EmptyDotWidget() : FullDotWidget(),
         this.rate < 2 ? EmptyDotWidget() : FullDotWidget(),
         this.rate < 3 ? EmptyDotWidget() : FullDotWidget(),
         this.rate >= 4 ? FullDotWidget() : EmptyDotWidget(),

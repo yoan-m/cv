@@ -87,7 +87,7 @@ class DrawerWidget extends StatelessWidget {
           DrawerRateWidget(
             title: 'Flutter',
             subtitle: '',
-            rate: 2,
+            rate: 1,
           ),
           DrawerSubTileWidget(
             title: 'Outils/Méthode',
