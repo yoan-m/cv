@@ -37,6 +37,11 @@ class PageExperienceWidget extends StatelessWidget {
                 Text(this.dateDebut),
                 Text('à'),
                 Text(this.dateFin),
+                Text(
+                  this.entreprise,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.headline5,
+                ),
               ]),
         ),
         contentsBuilder: (context, index) => Card(
@@ -57,26 +62,6 @@ class PageExperienceWidget extends StatelessWidget {
                   this.technos,
                   style: Theme.of(context).textTheme.headline5,
                 ),
-                Row(children: [
-                  this.perso != null && this.perso
-                      ? Icon(
-                          Icons.person,
-                          size: 14,
-                        )
-                      : Icon(
-                          Icons.business,
-                          size: 14,
-                        ),
-                  Container(
-                    padding: EdgeInsets.only(left: 5),
-                    //width: 80,
-                    child: Text(
-                      this.entreprise,
-                      overflow: TextOverflow.clip,
-                      style: Theme.of(context).textTheme.headline5,
-                    ),
-                  ),
-                ]),
               ],
             ),
           ),
