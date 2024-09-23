@@ -27,7 +27,8 @@ class DrawerWidget extends StatelessWidget {
                   backgroundColor: Colors.grey,
                   child: CircleAvatar(
                     radius: 50,
-                    backgroundImage: AssetImage('images/avatar.jpg'),
+                    backgroundImage:
+                        Image.asset('assets/images/avatar.jpg').image,
                   ),
                 ),
                 SizedBox(
@@ -152,6 +153,9 @@ class DrawerWidget extends StatelessWidget {
           DrawerDiplomaWidget(
             title: 'Bac STI Génie Electronique (Mention Bien)',
             year: '2005',
+          ),
+          SizedBox(
+            height: 10,
           ),
         ],
       ),
