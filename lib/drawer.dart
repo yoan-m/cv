@@ -62,7 +62,12 @@ class DrawerWidget extends StatelessWidget {
           DrawerRateWidget(
             title: 'Java',
             subtitle: 'Springboot',
-            rate: 3,
+            rate: 2,
+          ),
+          DrawerRateWidget(
+            title: 'Python',
+            subtitle: 'Django',
+            rate: 1,
           ),
           DrawerRateWidget(
             title: 'Web',
@@ -87,7 +92,7 @@ class DrawerWidget extends StatelessWidget {
           DrawerRateWidget(
             title: 'Flutter',
             subtitle: '',
-            rate: 1,
+            rate: 3,
           ),
           DrawerSubTileWidget(
             title: 'Outils/Méthode',
