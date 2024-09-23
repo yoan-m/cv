@@ -4,8 +4,8 @@ class PageTrainingWidget extends StatelessWidget {
   final String title;
   final String subtitle;
 
-  const PageTrainingWidget({Key key, this.title, this.subtitle})
-      : super(key: key);
+  const PageTrainingWidget(
+      {super.key, required this.title, required this.subtitle});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class PageTrainingWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(this.title, style: Theme.of(context).textTheme.headline4),
+          Text(this.title, style: Theme.of(context).textTheme.headlineMedium),
           Text(
             this.subtitle,
           ),

@@ -11,15 +11,14 @@ class PageExperienceWidget extends StatelessWidget {
   final bool perso;
 
   const PageExperienceWidget(
-      {Key key,
-      this.title,
-      this.subtitle,
-      this.technos,
-      this.entreprise,
-      this.dateDebut,
-      this.dateFin,
-      this.perso})
-      : super(key: key);
+      {super.key,
+      required this.title,
+      required this.subtitle,
+      required this.technos,
+      required this.entreprise,
+      required this.dateDebut,
+      required this.dateFin,
+      this.perso = false});
 
   @override
   Widget build(BuildContext context) {
@@ -34,13 +33,13 @@ class PageExperienceWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(this.dateDebut),
+                Text(this.dateDebut, textAlign: TextAlign.center),
                 Text('à'),
-                Text(this.dateFin),
+                Text(this.dateFin, textAlign: TextAlign.center),
                 Text(
                   this.entreprise,
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.headline5,
+                  style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ]),
         ),
@@ -53,14 +52,14 @@ class PageExperienceWidget extends StatelessWidget {
               children: [
                 Text(
                   this.title,
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context).textTheme.displaySmall,
                 ),
                 Text(
                   this.subtitle,
                 ),
                 Text(
                   this.technos,
-                  style: Theme.of(context).textTheme.headline5,
+                  style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ],
             ),

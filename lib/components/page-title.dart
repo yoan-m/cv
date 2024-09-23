@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class PageTitleWidget extends StatelessWidget {
   final String title;
   final IconData icon;
-  const PageTitleWidget({Key key, this.title, this.icon}) : super(key: key);
+  const PageTitleWidget({super.key, required this.title, required this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class PageTitleWidget extends StatelessWidget {
         ),
         Text(
           this.title,
-          style: Theme.of(context).textTheme.headline3,
+          style: Theme.of(context).textTheme.displaySmall,
         ),
       ]),
       Divider()

@@ -4,7 +4,8 @@ class DrawerDiplomaWidget extends StatelessWidget {
   final String title;
   final String year;
 
-  const DrawerDiplomaWidget({Key key, this.title, this.year}) : super(key: key);
+  const DrawerDiplomaWidget(
+      {super.key, required this.title, required this.year});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class DrawerDiplomaWidget extends StatelessWidget {
             ),
             Text(
               this.year,
-              style: Theme.of(context).textTheme.headline5,
+              style: Theme.of(context).textTheme.headlineSmall,
             )
           ],
         ),

@@ -4,7 +4,7 @@ class RatingWidget extends StatelessWidget {
   final int rate;
   final String label;
 
-  const RatingWidget({Key key, this.label, this.rate}) : super(key: key);
+  const RatingWidget({super.key, required this.label, required this.rate});
 
   @override
   Widget build(BuildContext context) {

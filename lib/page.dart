@@ -17,13 +17,13 @@ class PageWidget extends StatelessWidget {
           Center(
             child: Text(
               'Ingénieur',
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
           ),
           Center(
             child: Text(
               'Développeur Fullstack',
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
           ),
           Padding(padding: EdgeInsets.all(20)),
@@ -63,8 +63,8 @@ class PageWidget extends StatelessWidget {
             title: 'Développeur Fullstack',
             entreprise: 'TLM',
             subtitle:
-                'Développeur dans l'univers des Startups. TLM est une entreprise québécoise qui a ouvert une antenne en France en 2022.',
-            technos: 'Flutter, NextJS',
+                'Développeur d\'application mobile dans l\'univers des Startups. TLM est une entreprise québécoise qui a ouvert une antenne en France en 2022.',
+            technos: 'Flutter, NextJS, Python',
           ),
           PageExperienceWidget(
             dateDebut: 'Janvier 2020',
@@ -236,7 +236,8 @@ class PageWidget extends StatelessWidget {
             perso: true,
           ),
           PageSpacerWidget(),
-          PageTitleWidget(title: 'CENTRES D\'INTERETS'),
+          PageTitleWidget(
+              title: 'CENTRES D\'INTERETS', icon: Icons.travel_explore),
           Wrap(
             spacing: 20,
             runSpacing: 20,

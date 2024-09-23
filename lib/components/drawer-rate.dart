@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 class DrawerRateWidget extends StatelessWidget {
   final String title;
-  final String subtitle;
+  final String? subtitle;
   final int rate;
 
-  const DrawerRateWidget({Key key, this.title, this.rate, this.subtitle})
-      : super(key: key);
+  const DrawerRateWidget(
+      {super.key, required this.title, required this.rate, this.subtitle});
 
   @override
   Widget build(BuildContext context) {
@@ -25,12 +25,11 @@ class DrawerRateWidget extends StatelessWidget {
             ),
           ],
         ),
-        this.subtitle.isNotEmpty
-            ? Text(
-                this.subtitle,
-                style: Theme.of(context).textTheme.headline5,
-              )
-            : Container()
+        if (this.subtitle != null && this.subtitle!.isNotEmpty)
+          Text(
+            this.subtitle!,
+            style: Theme.of(context).textTheme.headlineSmall,
+          )
       ]),
     );
   }

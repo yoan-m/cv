@@ -4,10 +4,10 @@ import 'package:url_launcher/url_launcher.dart';
 class DrawerIconWidget extends StatelessWidget {
   final String title;
   final IconData icon;
-  final LinkType linktype;
+  final LinkType? linktype;
 
-  const DrawerIconWidget({Key key, this.title, this.icon, this.linktype})
-      : super(key: key);
+  const DrawerIconWidget(
+      {super.key, required this.title, required this.icon, this.linktype});
 
   @override
   Widget build(BuildContext context) {

@@ -27,13 +27,15 @@ class DrawerWidget extends StatelessWidget {
                   backgroundColor: Colors.grey,
                   child: CircleAvatar(
                     radius: 50,
-                    backgroundImage: NetworkImage(
-                        "https://lh3.googleusercontent.com/ogw/ADea4I59DJhX1snhePNavqINe3On6DPiHV7Blj4VArUeOCM=s83-c-mo"),
+                    backgroundImage: AssetImage('images/avatar.jpg'),
                   ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Text(
                   'Yoan MURCIANO',
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 )
               ],
             ),
@@ -82,7 +84,7 @@ class DrawerWidget extends StatelessWidget {
           DrawerRateWidget(
             title: 'AngularJS',
             subtitle: '',
-            rate: 4,
+            rate: 3,
           ),
           DrawerRateWidget(
             title: 'OpenLayers',

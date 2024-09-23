@@ -4,8 +4,8 @@ class DrawerLanguageWidget extends StatelessWidget {
   final String title;
   final String level;
 
-  const DrawerLanguageWidget({Key key, this.title, this.level})
-      : super(key: key);
+  const DrawerLanguageWidget(
+      {super.key, required this.title, required this.level});
 
   @override
   Widget build(BuildContext context) {

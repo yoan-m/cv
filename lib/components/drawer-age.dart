@@ -2,9 +2,7 @@ import 'package:cv/components/drawer-icon.dart';
 import 'package:flutter/material.dart';
 
 class DrawerAgeWidget extends StatelessWidget {
-  const DrawerAgeWidget({
-    Key key,
-  }) : super(key: key);
+  const DrawerAgeWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

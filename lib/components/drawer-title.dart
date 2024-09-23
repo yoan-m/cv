@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class DrawerTileWidget extends StatelessWidget {
   final String title;
 
-  const DrawerTileWidget({Key key, this.title}) : super(key: key);
+  const DrawerTileWidget({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class DrawerTileWidget extends StatelessWidget {
           Expanded(
             child: Text(
               this.title,
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
           ),
         ],

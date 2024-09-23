@@ -4,7 +4,7 @@ class PageHobbyWidget extends StatelessWidget {
   final String title;
   final IconData icon;
 
-  const PageHobbyWidget({Key key, this.title, this.icon}) : super(key: key);
+  const PageHobbyWidget({super.key, required this.title, required this.icon});
 
   @override
   Widget build(BuildContext context) {
