@@ -58,8 +58,17 @@ class PageWidget extends StatelessWidget {
               title: 'EXPERIENCES PROFESSIONNELLES / STAGES',
               icon: Icons.business),
           PageExperienceWidget(
-            dateDebut: 'Janvier 2020',
+            dateDebut: 'Novembre 2022',
             dateFin: 'Aujourd\'hui',
+            title: 'Développeur Fullstack',
+            entreprise: 'TLM',
+            subtitle:
+                'Développeur dans l'univers des Startups. TLM est une entreprise québécoise qui a ouvert une antenne en France en 2022.',
+            technos: 'Flutter, NextJS',
+          ),
+          PageExperienceWidget(
+            dateDebut: 'Janvier 2020',
+            dateFin: 'Octobre 2022',
             title: 'LeadDev SIG',
             entreprise: 'Systel',
             subtitle:
@@ -235,13 +244,14 @@ class PageWidget extends StatelessWidget {
               PageHobbyWidget(
                   icon: Icons.settings_input_antenna,
                   title: 'Domotique (contributeur Jeedom)'),
-              PageHobbyWidget(title: 'Paramoteur', icon: Icons.paragliding),
+              PageHobbyWidget(title: 'Crossfit', icon: Icons.fitness_center),
               PageHobbyWidget(
                   title: 'Sapeur Pompier Volontaire',
                   icon: Icons.local_fire_department),
               PageHobbyWidget(title: 'Electronique', icon: Icons.bug_report),
               PageHobbyWidget(title: 'Voyages', icon: Icons.explore),
               PageHobbyWidget(title: 'Maraîchage', icon: Icons.emoji_nature),
+              PageHobbyWidget(title: 'Apiculture', icon: Icons.hive),
               PageHobbyWidget(title: 'DIY', icon: Icons.design_services)
             ],
           ),
